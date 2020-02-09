@@ -1,5 +1,11 @@
 body { color: #333333; }
 
+/* ページ */
+#page {
+    width: 800px;
+    margin: 0 auto;
+}
+
 
 /* リンクナビ */
 .pageNavi ul li a {
@@ -19,9 +25,16 @@ body { color: #333333; }
 
 /* タイトル */
 #siteTitle {
+     color: #FFFFFF;
      font-size: 22px;
-     background-color: aqua;
-     
+     width: 100%;    
+     padding: 90px;
+     background-image: url("../images/h1_whats_2.jpg");
+     background-repeat: no-repeat;
 
+}
+/* フッター */
+.pageFoot {
+    display: inline;
 }
 
