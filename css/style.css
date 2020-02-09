@@ -1,0 +1,27 @@
+body { color: #333333; }
+
+
+/* リンクナビ */
+.pageNavi ul li a {
+    font-size: 12px;
+    color: #CCCCCC;
+    list-style: none;
+    text-decoration: none;
+}
+
+.pageNavi ul li {
+    display: inline;
+}
+
+/* ヘッダー */
+#pageHead{
+}
+
+/* タイトル */
+#siteTitle {
+     font-size: 22px;
+     background-color: aqua;
+     
+
+}
+
