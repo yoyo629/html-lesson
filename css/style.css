@@ -1,9 +1,23 @@
-body { color: #333333; }
+body { 
+    color: #333333;
+    font-family: sans-serif;
+}
+
+p {
+}
 
 /* ページ */
 #page {
     width: 800px;
     margin: 0 auto;
+}
+/* ページリンク */
+.pageLink ul li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    margin: 8px;
+    clear: both;
 }
 
 
@@ -13,6 +27,7 @@ body { color: #333333; }
     color: #CCCCCC;
     list-style: none;
     text-decoration: none;
+    background-color: brown;
 }
 
 .pageNavi ul li {
@@ -24,17 +39,46 @@ body { color: #333333; }
 }
 
 /* タイトル */
-#siteTitle {
-     color: #FFFFFF;
-     font-size: 22px;
-     width: 100%;    
-     padding: 90px;
-     background-image: url("../images/h1_whats_2.jpg");
-     background-repeat: no-repeat;
-
+.siteTitle {
+    color: #FFFFFF;
+    padding: 90px;
+    background-image: url("../images/h1_whats_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-/* フッター */
-.pageFoot {
+
+/* ページボディ */
+.pageBodymain {
+    /* display: inline-block;
+    text-align: center; */
+    /* background-color: aqua; */
+}
+.pageBodymain li {
     display: inline;
+}
+
+.pageBodysub {
+    background-color: darkkhaki;
+}
+
+/* ページフッター */
+.pageNavifoot ul {
+    margin: 0;
+    padding: 0;
+}
+.pageNavifoot ul li {
+    font-size: 12px;
+    color: #999999;
+    list-style: none;
+    display: inline;
+    border-left: solid 1px #CCCCCC;
+    padding: 0 12px;
+}
+
+/* フッター */
+#pageFoot {
+    font-size: 2px;
+    display: inline;
+    background-color: darkblue;
 }
 
