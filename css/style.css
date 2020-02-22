@@ -1,64 +1,129 @@
 body { 
     color: #333333;
-    font-family: sans-serif;
+    font-family: serif;
 }
 
-p {
-}
+p { font-size: 14px; }
 
 /* ページ */
 #page {
     width: 800px;
     margin: 0 auto;
 }
-/* ページリンク */
-.pageLink ul li {
+/* SNSページリンク */
+.SnsLink ul li {
     display: inline;
     text-decoration: none;
     list-style: none;
     margin: 8px;
     clear: both;
 }
+#hoge {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: pink;
+}
+/* ページメインリスト */
+.pagemainList a {
+    text-decoration: none;
+}
+.pagemainList {
+    width: 1000px;
+    font-size: 14px;
+}
+.pagemainList ul li {
+    list-style: none;
+    display: inline;
+    padding: 0 12px;
+    margin: 0;
+}
+
+/* ページリンク */
+.page_block {
+    display: flex;
+    /* padding: 0 10px; */
+    justify-content: space-between;
+}
+.page_block_link1 {
+    /* text-align: left; */
+}
+.page_block_link2 {
+    /* text-align: right; */
+}
+/* .page_block_link1 p {
+    background-color: skyblue;
+    width: 100px;
+    height: 100px;
+}
+
+.page_block_link2 p {
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+} */
 
 
 /* リンクナビ */
+.pageNavi {
+    width: 1000px;
+    margin: 0 auto;
+}
 .pageNavi ul li a {
-    font-size: 12px;
+    font-size: 11px;
     color: #CCCCCC;
     list-style: none;
     text-decoration: none;
-    background-color: brown;
 }
-
 .pageNavi ul li {
     display: inline;
 }
 
 /* ヘッダー */
-#pageHead{
+.pageHead {
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-between;
 }
+.siteNavi {
+    display: flex;
+}
+.siteNavi ul {
+}
+
 
 /* タイトル */
 .siteTitle {
     color: #FFFFFF;
-    padding: 90px;
+    padding: 60px;
     background-image: url("../images/h1_whats_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 /* ページボディ */
-.pageBodymain {
-    /* display: inline-block;
-    text-align: center; */
-    /* background-color: aqua; */
+#page .pageBodymain {
+    color: #0C419A;
 }
-.pageBodymain li {
+#page .pageBodymain li {
     display: inline;
 }
 
-.pageBodysub {
+#page .pageBodysub {
     background-color: darkkhaki;
+}
+/* ページボックス */
+.pageBox {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pageBoxList {
+    border: 1px solid black;
+    padding: 5px;
+}
+.pageBoxList a {
+    text-decoration: none;
 }
 
 /* ページフッター */
@@ -74,11 +139,22 @@ p {
     border-left: solid 1px #CCCCCC;
     padding: 0 12px;
 }
+.pageNavifoot {
+    display: inline;
+    text-align: center;
+    background-color: darkseagreen;
+}
 
+.pageNavifoot ul li:first-child {
+    border-left: none;
+
+}
 /* フッター */
 #pageFoot {
     font-size: 2px;
     display: inline;
     background-color: darkblue;
+}
+#pageFoot #copyright {
 }
 
