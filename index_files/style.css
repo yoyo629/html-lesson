@@ -1,0 +1,201 @@
+body { 
+    color: #333333;
+    font-family: serif;
+}
+
+p { font-size: 14px; }
+
+/* ページ */
+#page {
+    width: 800px;
+    margin: 0 auto;
+}
+/* SNSページリンク */
+.SnsLink ul li {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    margin: 8px;
+    clear: both;
+}
+#hoge {
+    width: 1000px;
+    margin: 0 auto;
+}
+#hoge a:hover {
+    text-decoration: underline;
+    
+}
+/* ページメインリスト */
+.page-main {
+    /* display: flex; */
+}
+.pagemainList a {
+    text-decoration: none;
+    /* background-color: hotpink; */
+}
+.pagemainList {
+    /* display: flex; */
+    font-size: 14px;  
+}
+.pagemainList a {
+    text-decoration: none;
+    color: navy;
+}
+.pagemainList ul li {
+    list-style: none;
+    padding: 0 12px;
+    display: inline-block;
+    text-align: center;
+}
+
+/* ページリンク */
+.page_block {
+    display: flex;
+    /* padding: 0 10px; */
+    justify-content: space-between;
+}
+.page_block_link a {
+    text-decoration: none;
+}
+.page_block_link a:hover {
+    text-decoration: underline;
+}
+/* .page_block_link1 p {
+    background-color: skyblue;
+    width: 100px;
+    height: 100px;
+}
+
+.page_block_link2 p {
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+} */
+
+
+/* リンクナビ */
+.pageNavi {
+    width: 1000px;
+    margin: 0 auto;
+}
+.pageNavi ul li a {
+    font-size: 11px;
+    color: #CCCCCC;
+    list-style: none;
+    text-decoration: none;
+}
+.pageNavi ul li {
+    display: inline;
+}
+
+/* ヘッダー */
+.pageHead {
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-between;
+}
+.siteNavi {
+    display: flex;
+}
+.siteNavi ul {
+}
+
+
+/* タイトル */
+.siteTitle {
+    color: #FFFFFF;
+    padding: 60px;
+    max-width: 100%;
+    background-image: url("../images/h1_whats_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.siteTitle h1 {
+    font-size: 27px;
+}
+.siteTitle p {
+    font-size: 20px;
+}
+
+
+/* ページボディ */
+#page .pageBodymain {
+    color: #0C419A;
+}
+#page .pageBodymain li {
+    display: inline;
+}
+
+#page .pageBodysub {
+    background-color: darkkhaki;
+}
+.flex-box {
+    display: flex;
+}
+.flex-box ul li {
+    list-style: none;
+    margin: 8px;
+}
+.flex-box2 a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #666666;
+}
+.flex-box-top  li a {
+    font-size: 16px;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    padding: 12px;
+}
+/* ページボックス */
+.pageBox {
+    display: flex; 
+    flex-wrap: wrap;
+    
+    /* justify-content: space-between;
+    flex-wrap: wrap; */
+}
+.pageBoxList {
+    border: 1px solid black;
+    padding: 5px;
+    width: 25%;
+    margin: 11px;
+}
+.pageBoxList a {
+    text-decoration: none;
+}
+
+/* ページフッター */
+.pageNavifoot ul {
+    margin: 0;
+    padding: 0;
+}
+.pageNavifoot ul li {
+    font-size: 12px;
+    color: #999999;
+    list-style: none;
+    display: inline;
+    border-left: solid 1px #CCCCCC;
+    padding: 0 12px;
+}
+.pageNavifoot {
+    display: inline;
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+.pageNavifoot ul li:first-child {
+    border-left: none;
+
+}
+/* フッター */
+#pageFoot {
+    font-size: 2px;
+    display: inline;
+    background-color: darkblue;
+}
+#pageFoot #copyright {
+}
+
