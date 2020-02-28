@@ -18,25 +18,16 @@ p { font-size: 14px; }
     margin: 8px;
     clear: both;
 }
-#hoge {
-    width: 1000px;
-    margin: 0 auto;
-}
-#hoge a:hover {
+
+a:hover {
     text-decoration: underline;
     
 }
 /* ページメインリスト */
-.page-main {
-    /* display: flex; */
-}
-.pagemainList a {
-    text-decoration: none;
-    /* background-color: hotpink; */
-}
 .pagemainList {
-    /* display: flex; */
-    font-size: 14px;  
+    font-size: 14px;
+    text-decoration: none;
+    background-color: hotpink;
 }
 .pagemainList a {
     text-decoration: none;
@@ -44,7 +35,6 @@ p { font-size: 14px; }
 }
 .pagemainList ul li {
     list-style: none;
-    padding: 0 12px;
     display: inline-block;
     text-align: center;
 }
@@ -61,19 +51,6 @@ p { font-size: 14px; }
 .page_block_link a:hover {
     text-decoration: underline;
 }
-/* .page_block_link1 p {
-    background-color: skyblue;
-    width: 100px;
-    height: 100px;
-}
-
-.page_block_link2 p {
-    background-color: tomato;
-    width: 100px;
-    height: 100px;
-} */
-
-
 /* リンクナビ */
 .pageNavi {
     width: 1000px;
@@ -153,9 +130,6 @@ p { font-size: 14px; }
 .pageBox {
     display: flex; 
     flex-wrap: wrap;
-    
-    /* justify-content: space-between;
-    flex-wrap: wrap; */
 }
 .pageBoxList {
     border: 1px solid black;
@@ -172,7 +146,7 @@ p { font-size: 14px; }
     margin: 0;
     padding: 0;
 }
-.pageNavifoot ul li {
+.pageNavifoot li {
     font-size: 12px;
     color: #999999;
     list-style: none;
@@ -183,19 +157,16 @@ p { font-size: 14px; }
 .pageNavifoot {
     display: inline;
     text-align: center;
-    background-color: darkseagreen;
-}
+}    
 
 .pageNavifoot ul li:first-child {
     border-left: none;
 
 }
 /* フッター */
-#pageFoot {
+/* #pageFoot {
     font-size: 2px;
     display: inline;
-    background-color: darkblue;
-}
-#pageFoot #copyright {
-}
+    color: #ccc;
+} */
 
