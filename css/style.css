@@ -24,10 +24,14 @@ a:hover {
     
 }
 /* ページメインリスト */
-.pagemainList {
-    font-size: 14px;
+
+.pagemainList a {
     text-decoration: none;
-    background-color: hotpink;
+    /* background-color: hotpink; */
+}
+.pagemainList {
+    /* display: flex; */
+    font-size: 14px;  
 }
 .pagemainList a {
     text-decoration: none;
@@ -35,9 +39,11 @@ a:hover {
 }
 .pagemainList ul li {
     list-style: none;
+    padding: 0 12px;
     display: inline-block;
     text-align: center;
 }
+
 
 /* ページリンク */
 .page_block {
