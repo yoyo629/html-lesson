@@ -111,10 +111,19 @@ p {
     font-weight: 400;
     color: #666;
 }
+.sns-btn-center li {
+    text-align: center;
+}
 
 a:hover {
     text-decoration: underline;
     
+}
+
+#page2 {
+    width: 1000px;
+    margin: 0;
+    padding-left: 100px;
 }
 /* ページメインリスト */
 
@@ -171,9 +180,6 @@ a:hover {
     display: inline;
 }
 
-#page .pageBodysub {
-    background-color: darkkhaki;
-}
 .flex-box {
     display: flex;
 }
@@ -205,6 +211,29 @@ a:hover {
 }
 .pageBoxList a {
     text-decoration: none;
+}
+.sns-center {
+    text-align: center;
+}
+.sns-center li {
+    list-style: none;
+    display: inline;
+    padding-left: 30px;
+}
+.sns-center li:first-child {
+    color: #005ABC;
+    vertical-align: top;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.sns-btn-center {
+    padding-left: 0;
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 /* ページフッター */
