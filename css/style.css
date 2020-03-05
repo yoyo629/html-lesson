@@ -5,7 +5,9 @@ body {
 }
 
 p { 
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 2em;
+    margin: 0;
 }
 
 /* ヘッダー */
@@ -86,7 +88,7 @@ p {
 
 /* ページ */
 #page {
-    width: 800px;
+    width: 830px;
     margin: 0 auto;
 }
 /* SNSページリンク */
@@ -121,11 +123,15 @@ a:hover {
 }
 
 #page2 {
-    width: 1000px;
+    width: 1200px;
     margin: 0;
     padding-left: 100px;
 }
 /* ページメインリスト */
+.page-main ul li {
+    display: block;
+    float: left;
+}
 
 .pagemainList a {
     text-decoration: none;
@@ -137,7 +143,7 @@ a:hover {
 }
 .pagemainList a {
     text-decoration: none;
-    color: navy;
+    color: #0C419A;
 }
 .pagemainList ul li {
     list-style: none;
@@ -149,8 +155,12 @@ a:hover {
 /* ページリンク */
 .page_block {
     display: flex;
-    /* padding: 0 10px; */
     justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.page_block a {
+    color: #0C419A;
 }
 .page_block_link a {
     text-decoration: none;
@@ -161,24 +171,44 @@ a:hover {
 .pageBodymain {
     background-color: #DEECF8;
 }
-.pageBodymain p {
+.pageBodymain a {
     font-size: 16px;
-    color: black;
+    color: #0C419A;
 }
 .pageBox {
     padding: 20px;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+}
+/* ページボックス */
+.pageBodymain p {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.pageBox {
+    display: flex; 
+    flex-wrap: wrap;
+}
+.pageBoxList {
+    border: 1px solid #999999;
+    padding: 5px;
+    width: 220px;
+    height: 50px;
+    margin: 11px;
+}
+.pageBoxList a {
+    text-decoration: none;
 }
 .pageBoxList {
     background-color:#FFFFFF;
+
 }
 
 /* ページボディ */
-#page .pageBodymain {
-    color: #0C419A;
-}
-#page .pageBodymain li {
-    display: inline;
-}
+
 
 .flex-box {
     display: flex;
@@ -198,20 +228,7 @@ a:hover {
     border-bottom: solid 1px #ccc;
     padding: 12px;
 }
-/* ページボックス */
-.pageBox {
-    display: flex; 
-    flex-wrap: wrap;
-}
-.pageBoxList {
-    border: 1px solid black;
-    padding: 5px;
-    width: 25%;
-    margin: 11px;
-}
-.pageBoxList a {
-    text-decoration: none;
-}
+
 .sns-center {
     text-align: center;
 }
@@ -253,15 +270,28 @@ a:hover {
     display: inline;
     text-align: center;
 }    
+.pageNavifoot ul {
+    padding-top: 40px;
+}
+.pageNavifoot li a {
+    text-decoration: none;
+    color: gray;
+}
 
 .pageNavifoot ul li:first-child {
     border-left: none;
 
 }
 /* フッター */
-/* #pageFoot {
-    font-size: 2px;
+#pageFoot {
     display: inline;
-    color: #ccc;
-} */
+    color: #666666;
+    padding-left: 50px;
+    padding-bottom: 200px;
+    
+}
+#pageFoot p {
+    font-size: 10px;
+    padding-left: 260px;
+}
 
