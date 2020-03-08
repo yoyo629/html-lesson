@@ -9,6 +9,21 @@ p {
     line-height: 2em;
     margin: 0;
 }
+.title h2 {
+    font-size: 20px;
+    vertical-align: top;
+}
+.title h2::before {
+    content: url(../images/bg-heading-h2.png);
+    padding-right: 10px;
+    padding-bottom: 0;
+    vertical-align: middle;
+}
+.main-image {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 /* ヘッダー */
 .pageHead {
@@ -26,22 +41,22 @@ p {
 }
 
 /* SNSリンク */
-.sitehead-nav ul {
+.head-nav ul {
     list-style: none;
     display: flex;
 }
-.sitehead-nav li {
+.head-nav li {
     padding-right: 0;
     padding-top: 15px;
     padding-left: 30px;
     height: 70px;
 }
-.sitehead-nav li:first-child{
+.head-nav li:first-child{
     margin-right: auto;
     padding-top: 15px;
     padding-left: 53px;
 }
-.sitehead-nav li:last-child {
+.head-nav li:last-child {
     padding-top: 0;
 }
 
@@ -61,7 +76,7 @@ p {
     display: inline;
 }
 .pageNavi ul {
-   padding-left: 10px;
+    padding-left: 10px;
 }
 
 
@@ -88,7 +103,7 @@ p {
 
 /* ページ */
 #page {
-    width: 830px;
+    width: 820px;
     margin: 0 auto;
 }
 /* SNSページリンク */
@@ -117,38 +132,90 @@ p {
     text-align: center;
 }
 
-a:hover {
-    text-decoration: underline;
-    
+.nri-dx-file {
+    margin: 0 auto;
+    width: 270px;
+    border: 1px solid #005ABC;
+    padding: 5px;
+    text-align: center;
+    background-color: #005ABC;
+}
+.nri-dx-file a::before {
+    content: '';
+    content: url(../images/blue-right.png);
+}
+.nri-dx-file a::after {
+    content: '';
+    content: url(../images/file.png);
+    vertical-align: middle;
 }
 
+.nri-dx-file a {
+    color: white;
+    text-decoration: none;
+}
+.nri-dx-file a:hover {
+    background-color: thistle;
+}
+a:hover {
+    text-decoration: underline;   
+}
 #page2 {
-    width: 1200px;
-    margin: 0;
-    padding-left: 100px;
+   width: 1000px;
+   margin: 0 auto;
+   margin-bottom: 40px;
+   font-size: 14px;
+   border-bottom: dotted 1px black;
+}
+
+#page2 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+#page2 h2 {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    border-top: solid 2px black;
+    border-bottom: dotted 1px black;
+    margin-top: 130px;
+    margin-bottom: 40px;
 }
 /* ページメインリスト */
-.page-main ul li {
-    display: block;
-    float: left;
-}
-
-.pagemainList a {
-    text-decoration: none;
-    /* background-color: hotpink; */
-}
-.pagemainList {
-    /* display: flex; */
-    font-size: 14px;  
+.pagemainList li::before {
+    content: '';
+    content: url(../images/right.png);
+    width: 6px;
+    height: 6px;
+    vertical-align: middle;
 }
 .pagemainList a {
     text-decoration: none;
     color: #0C419A;
 }
+.pagemainList ul {
+    padding-left: 0;
+}
+.pagemainList li {
+    margin-bottom: 10px;
+    width: 250px;
+}
 .pagemainList ul li {
     list-style: none;
-    padding: 0 12px;
-    /* display: inline-block; */
+}
+.page-back {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 75px;
+}
+.page-back a {
+    text-decoration: none;
+    color: #0C419A;
+}
+.page-back::before {
+    content: '';
+    content: url(../images/left.png);
+    vertical-align: middle
 }
 
 
@@ -156,7 +223,7 @@ a:hover {
 .page_block {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 30px;
 }
 .page_block a {
@@ -168,65 +235,135 @@ a:hover {
 .page_block_link a:hover {
     text-decoration: underline;
 }
+.page_block_link2 a {
+    text-decoration: none;
+}
+.page_block_link2 a:hover {
+    text-decoration: underline;
+}
+.page_block_link a::before {
+    content: '<';
+    color: black;
+    margin-right: 5px;
+    vertical-align: baseline;
+}
+.page_block_link2 a::after {
+    content: '>';
+    color: black;
+    margin-left: 5px;
+    vertical-align: baseline;
+}
+
+
+/* ページボックス */
 .pageBodymain {
     background-color: #DEECF8;
+}
+.pageBoxTitle {
+    font-weight: 350;
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+.pageBox p::before {
+    content: '';
+    content: url(../images/right.png);
+    width: 6px;
+    height: 6px;
+    vertical-align: middle;
 }
 .pageBodymain a {
     font-size: 16px;
     color: #0C419A;
-}
-.pageBox {
-    padding: 20px;
     position: relative;
-    bottom: 20px;
-    left: 20px;
 }
-/* ページボックス */
-.pageBodymain p {
-    padding-left: 20px;
-    padding-top: 10px;
-    font-weight: 600;
-}
-
 .pageBox {
     display: flex; 
     flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
 }
 .pageBoxList {
-    border: 1px solid #999999;
+    border: 1px solid #FFFFFF;
     padding: 5px;
     width: 220px;
     height: 50px;
     margin: 11px;
+    align-items: center;
+    background-color:#FFFFFF;
+}
+.pageBoxList:hover {
+    background-color: #f4f4f4;
 }
 .pageBoxList a {
     text-decoration: none;
+    font-size: 16px;
+    line-height: 2px;
 }
-.pageBoxList {
-    background-color:#FFFFFF;
+.pageBoxList p {
+    line-height: 20px;
+}
+.pageBoxList::before {
+    content: '';
 
 }
 
 /* ページボディ */
-
-
-.flex-box {
-    display: flex;
+#page3 {
+    width: 1000px;
+    margin: 0 auto;
 }
+
 .flex-box ul li {
     list-style: none;
-    margin: 10px;
+    margin-left: 10px;
+}
+
+.flex-box-ul {
+    padding-left: 0;
+    width: 250px;
+}
+.flex-box {
+    width: 250px;
+    display: flex;
+}
+.flex-box2 li::before {
+    content: '';
+    content: url(../images/right.png);
+    width: 6px;
+    height: 6px;
+    vertical-align: middle;
 }
 .flex-box2 a {
     font-size: 14px;
     text-decoration: none;
     color: #666666;
+    padding-top: 10px;
 }
-.flex-box-top  li a {
-    font-size: 16px;
+.flex-box2 li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* display: table-cell; */
+}
+.flex-box2 li:first-child {
+    padding-top: 13px;
+    padding-bottom: 13px;
     border-top: solid 1px #ccc;
     border-bottom: solid 1px #ccc;
-    padding: 12px;
+    
+    font-weight: 600;
+}
+.flex-box-top  li a { 
+    /* border-top: solid 1px #ccc; */
+    /* border-bottom: solid 1px #ccc; */
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.flex-box-top a {
+    width: 300px;
 }
 
 .sns-center {
@@ -253,7 +390,7 @@ a:hover {
     margin-bottom: 35px;
 }
 
-/* ページフッター */
+/* 問合せ */
 .pageNavifoot ul {
     margin: 0;
     padding: 0;
@@ -268,7 +405,6 @@ a:hover {
 }
 .pageNavifoot {
     display: inline;
-    text-align: center;
 }    
 .pageNavifoot ul {
     padding-top: 40px;
@@ -292,6 +428,6 @@ a:hover {
 }
 #pageFoot p {
     font-size: 10px;
-    padding-left: 260px;
+    padding-left: 12px;
 }
 
