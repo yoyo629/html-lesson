@@ -303,7 +303,7 @@ a:hover {
     line-height: 2px;
 }
 .pageBoxList p {
-    line-height: 20px;
+    line-height: 15px;
 }
 .pageBoxList::before {
     content: '';
