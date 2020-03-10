@@ -34,13 +34,6 @@ p {
     background-color: white;
     padding: 0;
 }
-.siteNavi {
-    margin: 0;
-    padding: 0;
-    height: 65px;
-}
-
-/* SNSリンク */
 .head-nav ul {
     list-style: none;
     display: flex;
@@ -59,8 +52,13 @@ p {
 .head-nav li:last-child {
     padding-top: 0;
 }
+.siteNavi {
+    margin: 0;
+    padding: 0;
+    height: 65px;
+}
 
-/* リンクナビ */
+/* ページナビ */
 .pageNavi {
     width: 1000px;
     margin: 0 auto;
@@ -101,18 +99,19 @@ p {
     color: white;
 }
 
-/* ページ */
-#page {
+/* ページブロック１ */
+#page_block {
     width: 820px;
     margin: 0 auto;
 }
+
 /* SNSページリンク */
-.SnsLink ul {
+.snsLink ul {
     text-align: right;
     text-decoration: none;
     list-style: none;
 }
-.SnsLink li {
+.snsLink li {
     display: inline;
     padding: 8px;
 }
@@ -132,6 +131,7 @@ p {
     text-align: center;
 }
 
+/* ダウンロードファイル */
 .nri-dx-file {
     margin: 0 auto;
     width: 270px;
@@ -149,7 +149,6 @@ p {
     content: url(../images/file.png);
     vertical-align: middle;
 }
-
 .nri-dx-file a {
     color: white;
     text-decoration: none;
@@ -160,19 +159,20 @@ p {
 a:hover {
     text-decoration: underline;   
 }
-#page2 {
+
+/* ページブロック２ */
+#page_block2 {
    width: 1000px;
    margin: 0 auto;
    margin-bottom: 40px;
    font-size: 14px;
    border-bottom: dotted 1px black;
 }
-
-#page2 ul {
+#page_block2 ul {
     display: flex;
     flex-wrap: wrap;
 }
-#page2 h2 {
+#page_block2 h2 {
     padding-top: 25px;
     padding-bottom: 30px;
     border-top: solid 2px black;
@@ -180,6 +180,7 @@ a:hover {
     margin-top: 130px;
     margin-bottom: 40px;
 }
+
 /* ページメインリスト */
 .pagemainList li::before {
     content: '';
@@ -219,35 +220,35 @@ a:hover {
 }
 
 
-/* ページリンク */
-.page_block {
+/* 別ページへ */
+.other_page {
     display: flex;
     justify-content: space-between;
     padding-top: 80px;
     padding-bottom: 30px;
 }
-.page_block a {
+.other_page a {
     color: #0C419A;
 }
-.page_block_link a {
+.other_page_link a {
     text-decoration: none;
 }
-.page_block_link a:hover {
+.other_page_link a:hover {
     text-decoration: underline;
 }
-.page_block_link2 a {
+.other_page_link2 a {
     text-decoration: none;
 }
-.page_block_link2 a:hover {
+.other_page_link2 a:hover {
     text-decoration: underline;
 }
-.page_block_link a::before {
+.other_page_link a::before {
     content: '<';
     color: black;
     margin-right: 5px;
     vertical-align: baseline;
 }
-.page_block_link2 a::after {
+.other_page_link2 a::after {
     content: '>';
     color: black;
     margin-left: 5px;
@@ -255,8 +256,8 @@ a:hover {
 }
 
 
-/* ページボックス */
-.pageBodymain {
+/* NRIの強みページボックス */
+.page_center {
     background-color: #DEECF8;
 }
 .pageBoxTitle {
@@ -272,7 +273,7 @@ a:hover {
     height: 6px;
     vertical-align: middle;
 }
-.pageBodymain a {
+.page_center a {
     font-size: 16px;
     color: #0C419A;
     position: relative;
@@ -310,17 +311,18 @@ a:hover {
 
 }
 
-/* ページボディ */
-#page3 {
+/* ページボックス３ */
+#page_block3 {
     width: 1000px;
     margin: 0 auto;
 }
 
+
+/* NRI各ページ */
 .flex-box ul li {
     list-style: none;
     margin-left: 10px;
 }
-
 .flex-box-ul {
     padding-left: 0;
     width: 250px;
@@ -366,6 +368,7 @@ a:hover {
     width: 300px;
 }
 
+/* snsリンク */
 .sns-center {
     text-align: center;
 }
@@ -390,7 +393,7 @@ a:hover {
     margin-bottom: 35px;
 }
 
-/* 問合せ */
+/* フッターナビ */
 .pageNavifoot ul {
     margin: 0;
     padding: 0;
