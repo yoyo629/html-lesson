@@ -411,6 +411,7 @@ a:hover {
 }    
 .pageNavifoot ul {
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 .pageNavifoot li a {
     text-decoration: none;
