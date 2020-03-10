@@ -347,7 +347,6 @@ a:hover {
 .flex-box2 li {
     padding-top: 10px;
     padding-bottom: 10px;
-    /* display: table-cell; */
 }
 .flex-box2 li:first-child {
     padding-top: 13px;
@@ -358,8 +357,6 @@ a:hover {
     font-weight: 600;
 }
 .flex-box-top  li a { 
-    /* border-top: solid 1px #ccc; */
-    /* border-bottom: solid 1px #ccc; */
     font-size: 17px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -422,6 +419,7 @@ a:hover {
     border-left: none;
 
 }
+
 /* フッター */
 #pageFoot {
     display: inline;
