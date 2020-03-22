@@ -117,7 +117,7 @@ p {
 }
 .sns-btn {
     padding: 0;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 .sns-btn li {
     vertical-align: middle;
@@ -139,6 +139,7 @@ p {
     padding: 5px;
     text-align: center;
     background-color: #005ABC;
+    text-decoration: none;
 }
 .nri-dx-file a::before {
     content: '';
@@ -146,18 +147,16 @@ p {
 }
 .nri-dx-file a::after {
     content: '';
-    content: url(../images/file.png);
+    content: url(../images/icon_1r_24.png);
     vertical-align: middle;
 }
 .nri-dx-file a {
     color: white;
     text-decoration: none;
 }
-.nri-dx-file a:hover {
-    background-color: thistle;
-}
-a:hover {
-    text-decoration: underline;   
+.nri-dx-file:hover {
+    border: solid 1px steelblue;
+    background-color: steelblue;
 }
 
 /* ページブロック２ */
@@ -184,14 +183,15 @@ a:hover {
 /* ページメインリスト */
 .pagemainList li::before {
     content: '';
-    content: url(../images/right.png);
-    width: 6px;
-    height: 6px;
-    vertical-align: middle;
+    content: url(../images/icon-Right.svg);
+    display: inline-block;
+    width: 3px;
+    height: 3px;
 }
 .pagemainList a {
     text-decoration: none;
     color: #0C419A;
+    padding-left: 5px;
 }
 .pagemainList ul {
     padding-left: 0;
@@ -247,12 +247,16 @@ a:hover {
     color: black;
     margin-right: 5px;
     vertical-align: baseline;
+    text-decoration: none;
+    display: inline-block;
 }
 .other_page_link2 a::after {
     content: '>';
     color: black;
     margin-left: 5px;
     vertical-align: baseline;
+    text-decoration: none;
+    display: inline-block;
 }
 
 
@@ -266,33 +270,40 @@ a:hover {
     top: 20px;
     left: 15px;
 }
-.pageBox p::before {
+.pageBoxList a::before {
     content: '';
-    content: url(../images/right.png);
-    width: 6px;
-    height: 6px;
-    vertical-align: middle;
+    content: url(../images/icon-Right.svg);
+    display: inline-block;
+    padding-right: 20px;
+    height: 5px;
+    width: 5px;
 }
 .page_center a {
     font-size: 16px;
     color: #0C419A;
-    position: relative;
 }
 .pageBox {
     display: flex; 
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 15px;
     position: relative;
-    bottom: 10px;
+    bottom: 15px;
+    left: 5px;
     text-align: center;
 }
+.pageBox a {
+    justify-content: center;
+    align-items: center; 
+}
+
 .pageBoxList {
-    border: 1px solid #FFFFFF;
-    padding: 5px;
+    border: 1px solid #f4f4f4;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 220px;
-    height: 50px;
+    margin-top: 5px;
     margin: 11px;
-    align-items: center;
     background-color:#FFFFFF;
 }
 .pageBoxList:hover {
@@ -301,14 +312,10 @@ a:hover {
 .pageBoxList a {
     text-decoration: none;
     font-size: 16px;
-    line-height: 2px;
+    padding: 10px 15px;
 }
 .pageBoxList p {
-    line-height: 15px;
-}
-.pageBoxList::before {
-    content: '';
-
+    line-height: 1;
 }
 
 /* ページボックス３ */
